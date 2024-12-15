@@ -1,5 +1,6 @@
 <html>
 <body>
-<h2>Hello Vardhan. jenkin integration is successfully completed</h2>
+<h1> This is Maven based project for testing purpose <h1>
+<h2> Autmation done by - vardhan </h2>
 </body>
 </html>
