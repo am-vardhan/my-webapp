@@ -1,268 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+      <title>Homepage for Restaurant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Fooddddie's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+          href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
+</head>
 
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
- <meta charset="UTF-8">  
- <meta http-equiv="X-UA-Compatible" content="IE=edge">  
- <meta name="viewport" content="width=device-width, initial-scale=1.0">  
- <title>Welcome to my website</title>  
- <style>  
-    
-  *{  
-    margin: 0;  
-    padding: 0;  
-  }  
-  
-  .navbar {  
-    display: flex;  
-    align-items: center;  
-    justify-content: center;  
-    position: sticky;  
-    top: 0;  
-    cursor: pointer;  
-  }  
-  
-  .background {  
-    background: black;  
-    background-blend-mode: darken;  
-    background-size cover;  
-  }  
-  
-  .nav-list {  
-    width: 70%;  
-    display: flex;  
-    align-items: center;  
-  }  
-  
-  .logo {  
-    display: flex;  
-    justify-content: center;  
-    align-items: center;  
-  }  
-  
-  .logo img {  
-    width: 50px;  
-    border-radius: 50px;  
-  }  
-  
-  .nav-list li {  
-    list-style: none;  
-    padding: 26px 30px;  
-  }  
-  
-  .nav-list li a {  
-    text-decoration: none;  
-    color: white;  
-  }  
-  
-  .nav-list li a:hover {  
-    color: grey;  
-  }  
-  
-  .rightnav {  
-    width: 30%;  
-    text-align: right;  
-  }  
-  
-  #search {  
-    padding: 5px;  
-    font-size: 17px;  
-    border: 2px solid grey;  
-    border-radius: 9px;  
-  }  
-  
-  .firstsection {  
-    background-color: RGB(116, 241, 116);  
-    height: 400px;  
-  }  
-  
-  .secondsection {  
-    background-color: RGB(95, 95, 160);  
-    height: 400px;  
-  }  
-  
-  .box-main {  
-    display: flex;  
-    justify-content: center;  
-    align-items: center;  
-    color: black;  
-    max-width: 80%;  
-    margin: auto;  
-    height: 80%;  
-  }  
-  
-  .firsthalf {  
-    width: 100%;  
-    display: flex;  
-    flex-direction: column;  
-    justify-content: center;  
-  }  
-  
-  .secondhalf {  
-    width: 30%;  
-  }  
-  
-  .secondhalf img {  
-    width: 70%;  
-    border: 4px solid white;  
-    border-radius: 150px;  
-    display: block;  
-    margin: auto;  
-  }  
-  
-  .text-big {  
-    font-family: 'Piazzolla', serif;  
-    font-weight: bold;  
-    font-size: 35px;  
-  }  
-  
-  .text-small {  
-    font-size: 18px;  
-  }  
-  
-  .btn {  
-    padding: 8px 20px;  
-    margin: 7px 0;  
-    border: 2px solid white;  
-    border-radius: 8px;  
-    background: none;  
-    color: white;  
-    cursor: pointer;  
-  }  
-  
-  .btn-sm {  
-    padding: 6px 10px;  
-    vertical-align: middle;  
-  }  
-  
-  .section {  
-    height: 400px;  
-    display: flex;  
-    align-items: center;  
-    justify-content: center;  
-    max-width: 90%;  
-    margin: auto;  
-  }  
-  
-  .section-Left {  
-    flex-direction: row-reverse;  
-  }  
-  
-  .paras {  
-    padding: 0px 65px;  
-  }  
-  
-  .thumbnail img {  
-    width: 250px;  
-    border: 2px solid black;  
-    border-radius: 26px;  
-    margin-top: 19px;  
-  }  
-  
-  .center {  
-    text-align: center;  
-  }  
-  
-  .text-footer {  
-    text-align: center;  
-    padding: 30px 0;  
-    font-family: 'Ubuntu,' sans-serif;  
-    display: flex;  
-    justify-content: center;  
-    color: white;  
-  }  
-  
- </style>  
-   
-</head>  
-  
- <body>  
-  <nav class=" navbar background">  
-    <ul class="nav-list">  
-      <div class="logo">  
-        <img src="https://media.licdn.com/dms/image/C4D0BAQEwg5FK93uumQ/company-logo_200_200/0/1519923012279?e=2147483647&v=beta&t=63CNoS8OTR4lHjPhHSO7eFFqwLGwYunWfyDBV3tdc0c">  
-      </div>  
-      <li><a href="#web">Web Technology</a></li>  
-      <li><a href="#program">C Programming</a></li>  
-      <li><a href="#course">Courses</a></li>  
-    </ul>  
-  
-    <div class="rightNav">  
-      <input type="text" name="search" id="search">  
-      <button class="btn btn-sm">Search</button>  
-    </div>  
-  </nav>  
-  
-  <section class=" first section">  
-    <div class="box-main">  
-      <div class="firstHalf">  
-        <h1 class="text-big" id="web">  
-          Web Technology  
-        </h1>  
-           
-        <p class="text-small">  
-           HTML, referred to as HyperText Markup  
-          Language. It is the most widely used language that is used to develop a webpage. it was created by Berner-Lee in the year of 1991. The first standard version of HTML is HTML 2.0 .It was launched in the year of 1995. The major version of HTML is HTML5 which was launched in the year of 1999. Now we are using the latest version of HTML, which is HTML5. With the help of HTML, we can create a website and become web developers.  
-        </p>  
-  
-  
-      </div>  
-    </div>  
-  </section>  
-  
-  <section class= "second section">  
-    <div class="box-main">  
-      <div class="secondHalf">  
-        <h1 class="text-big" id="program">  
-          C Programming  
-        </h1>  
-        <p class="text-small">  
-          C is a powerful general-purpose programming language developed at AT & T's Bell Laboratories of USA in 1972.It was designed and written by Dennis Ritchie. C become popular because it is reliable, simple, and easy to use.C Programming is used to develop software like operating systems, databases, compilers, and so on. C programming is an excellent language to learn to program for beginners.  
-Although numerous computer languages are used for writing computer applications, the computer programming language, C, is the most popular language worldwide. Everything from microcontrollers to operating systems is written in C since it's very flexible and versatile, allowing maximum control with minimal commands. If you are interested in a career in computer programming, it would be wise to start by learning the C programming language.  
-        </p>  
-  
-  
-      </div>  
-    </div>  
-  </section>  
-  
-  <section class="section">  
-    <div class="paras">  
-      <h1 class="sectionTag text-big">Java</h1>  
-  
-      <p class= "sectionSubTag text-small">  
-        Java is the one of the most  
-        popular programming language  
-        for many years. Java is also known as Object  
-        Oriented Programming Language. But we cannot say that Java is not  
-        considered as pure object-oriented  
-        as it provides support for primitive  
-        data types (like int, char, etc) The  
-        Java codes are first compiled into byte  
-        code (machine-independent code). Then  
-        the byte code is run on Java Virtual  
-        Machine (JVM), regardless of the  
-        underlying architecture.  
-      </p>  
-  
-  
-    </div>  
-  
-    <div class="thumbnail">  
-      <img src="https://wallpapers.com/images/featured/murjp1nk4lp1idlt.jpg" alt="laptop image">  
-    </div>  
-  </section>  
-  
-  <footer class="background">  
-    <p class="text-footer">  
-      Copyright ©-All rights are reserved  
-    </p>  
-  
-  
-  </footer>  
-  
- </body>  
-  
-</html>  
+<body>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          Fooddddie's Kitchen
+          </a>
+        <button class="navbar-toggler" type="button" 
+                data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                      About
+                      </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reservation">
+                      Reservation
+                      </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">
+                      Menu
+                      </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#shop">
+                      Shop
+                      </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 text-white">
+              Welcome To Fooddddie's Kitchen
+              </h1>
+            <p class="lead text-white">
+              Explore a world of flavors and 
+              indulge in culinary delights.
+              </p>
+            <a class="btn btn-primary btn-lg" href="#reservations">
+              Book a table
+              </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-heading">
+                      Why Choose Us?
+                      </h2>
+                    <p class="text-muted">
+                        Discover the extraordinary at Fooddddie's Kitchen. 
+                          Our commitment to quality and
+                        exceptional service makes us your top choice. 
+                          Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="image/1.png"
+                        class="img-fluid" alt="About Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div id="carouselExampleControls" 
+             class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src=image/2.png"
+                         class="d-block w-100" 
+                         alt="Food Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="src=image/3.png"
+                         class="d-block w-100" 
+                         alt="Food Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="src=image/4.png"
+                         class="d-block w-100" 
+                         alt="Food Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" 
+               href="#carouselExampleControls" role="button" 
+               data-slide="prev">
+                <span class="carousel-control-prev-icon" 
+                      aria-hidden="true">
+                  </span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" 
+               href="#carouselExampleControls" 
+               role="button" data-slide="next">
+                <span class="carousel-control-next-icon" 
+                      aria-hidden="true">
+                  </span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Reservation and Contact Section -->
+    <section id="reservations" class="reservation-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-heading">
+                      Make a Booking
+                      </h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" 
+                                   id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">
+                              Phone Number
+                              </label>
+                            <input type="text" 
+                                   class="form-control" id="phoneNumber"
+                                   placeholder="Enter your phone number">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                          Submit
+                          </button>
+                    </form>
+                </div>
+                <div class="col-lg-6 opening-time">
+                    <h2 class="section-heading">Opening Times</h2>
+                    <p class="text-muted">
+                        <span>Monday—Thursday: 08:00 — 22:00</span><br>
+                        <span>Friday—Saturday: 09:00 — 23:00</span><br>
+                        <span>Sunday: 10:00 — 17:00</span>
+                    </p>
+                    <h2 class="section-heading">Contact</h2>
+                    <p class="text-muted">
+                        <span>410-602-8008</span><br>
+                        <span>15 Florida Ave</span><br>
+                        <span>Palo-Alto, 1111 CA</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section text-center">
+        <div class="container">
+            <p>&copy; 2023 Fooddddie's Kitchen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+@import url(
+'https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #000;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.nav-flex-row li a:hover {
+    background: #E7E7E7;
+}
+
+.section-intro {
+    height: 820px;
+    background-image: url(img/foddiee.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #000;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+
+.opening-time,
+.contact-address {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-address p span {
+    display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-address p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+.carousel-item img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
